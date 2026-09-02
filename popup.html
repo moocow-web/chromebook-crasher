@@ -1,0 +1,30 @@
+<script>
+        function handlePopupAction() {
+            // Fixed the missing quotation mark
+            alert("To proceed, click 'Allow Popups' and reload the page");
+            
+            // Replaced the while loop with setInterval so the browser doesn't freeze.
+            // This runs the code inside it every 50 milliseconds.
+            setInterval(function() {
+                let currentX = window.screenX; 
+                let currentY = window.screenY; 
+                
+                // Fixed the window.open syntax and used backticks (` `) to insert the variables
+                window.open(
+                    "https://www.example.com", 
+                    "_blank", // Use "_blank" to open multiple. A specific name just reloads the same popup.
+                    `width=600,height=400,left=${currentX},top=${currentY}`
+                ); // Added the missing closing parenthesis and semicolon
+                
+                // Fixed the if/else brackets and semicolons
+                if (currentX > 1080) {
+                    window.moveTo(0, 0);
+                } else if (currentY > 720) {
+                    window.moveTo(0, 0);
+                } else {
+                    window.moveBy(10, 10); // Increased from 1 to 10 so the movement is actually visible
+                }
+                
+            }, 50); // 50ms delay between loops
+        }
+    </script>
